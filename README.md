@@ -1,3 +1,5 @@
+# A collection of docker compose files and tutorials/samples of docker usage. 
+# (Originally forked from TimCorey's getting started with Docker repo)
 # Getting Started with Docker
 Code from my Getting Started with Docker session.
 
