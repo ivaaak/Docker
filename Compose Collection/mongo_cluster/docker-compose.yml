@@ -1,0 +1,25 @@
+# This will boot 4 containers: 3 mongo (shards) as a cluster, and 1 to issue mongo commands to others
+#
+version: "2.2"
+services:
+  mongo3:
+    image: mongo:3.2
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
+
+  mongo2:
+    image: mongo:3.2
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
+
+  mongo1:
+    image: mongo:3.0
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
+
+  mongosetup:
+    image: mongo:3.0
+    volumes:
+      - ./scripts:/scripts
+    restart: always
+    entrypoint: [ "bash", "/scripts/mongosetup.sh" ]
