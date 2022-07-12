@@ -2,8 +2,8 @@
 ## This will start 5 nodes:
 - Mongo server as the only member of the cluster
 - Mongosetup will init mongo as the master node
-- Elasticsearch will server as the index search db
-- Kibana will server as the web ui of elasticsearch
+- Elasticsearch will serve as the index search db
+- Kibana will serve as the web ui of elasticsearch
 - Mongo-connector will pipeline mongodb content to the elasticsearch
 
 [_compose.yaml_](compose.yaml)
