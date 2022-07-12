@@ -1,8 +1,8 @@
 # This will start 5 nodes:
-# mongo will server as the only member of the cluster
+# mongo will serve as the only member of the cluster
 # mongosetup will init mongo as the master node
-# elasticsearch will server as the index search db
-# kibana will server as the web ui of elasticsearch
+# elasticsearch will serve as the index search db
+# kibana will serve as the web ui of elasticsearch (on localhost:5601)
 # mongo-connector will pipeline mongodb content to the elasticsearch
 
 mongo:
