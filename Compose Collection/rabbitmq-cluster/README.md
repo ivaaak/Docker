@@ -1,8 +1,8 @@
-# RabbitMQ:
-## This will boot a Cluster of 3 RabbitMQ Docker Containers which are interconnected.
+# RabbitMQ Cluster:
+ This will boot a Cluster of 3 RabbitMQ Docker Containers which are interconnected.
 
 # What is cluster in RabbitMQ?
-## A RabbitMQ cluster is a logical grouping of one or several nodes, each sharing users, virtual hosts, queues, exchanges, bindings, runtime parameters and other distributed state.
+ A RabbitMQ cluster is a logical grouping of one or several nodes, each sharing users, virtual hosts, queues, exchanges, bindings, runtime parameters and other distributed state.
 
 ## Docker Compose:
 ```
