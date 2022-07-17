@@ -7,7 +7,7 @@ set -e
 # will be honored
 /usr/local/bin/docker-entrypoint.sh rabbitmq-server -detached
 
-# Do the cluster dance
+# StopStart cluster
 rabbitmqctl stop_app
 rabbitmqctl join_cluster rabbit@rabbitmq1
 
